@@ -682,7 +682,7 @@ const TeamSection = () => {
         <div className="team-members">
           <div className="team-member">
             <div className="member-photo">
-              <img src="https://raw.githubusercontent.com/runwithfun/introducing/main/images/team_ceo.jpg" alt="CEO" />
+              <img src="https://raw.githubusercontent.com/runwithfun/P.R.O./main/public/CEO_1.jpg" alt="CEO" />
             </div>
             <div className="member-info">
               <h3>Мария Николаева</h3>
@@ -697,7 +697,7 @@ const TeamSection = () => {
 
           <div className="team-member">
             <div className="member-photo">
-              <img src="https://raw.githubusercontent.com/runwithfun/introducing/main/images/team_cto.jpg" alt="CTO" />
+              <img src="https://raw.githubusercontent.com/runwithfun/P.R.O./main/public/CEO_2.jpg" alt="CTO" />
             </div>
             <div className="member-info">
               <h3>Дорохов Даниил</h3>
