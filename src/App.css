@@ -363,6 +363,44 @@
   .hero-buttons {
     justify-content: center;
   }
+
+  /* Уменьшаем размер всех изображений */
+  img {
+    max-width: 90% !important;
+    height: auto !important;
+  }
+
+  /* Специальные корректировки для конкретных секций */
+  .hero-image img {
+    max-width: 80% !important;
+    margin: 0 auto;
+  }
+
+  /* Изображения в слайдах карусели */
+  .function-image img {
+    max-width: 70% !important;
+    margin: 0 auto;
+  }
+
+  /* Изображения членов команды */
+  .member-photo img {
+    max-width: 100% !important;
+    height: 250px !important;
+    object-fit: cover;
+  }
+
+  /* Уменьшаем размер аватарок профилей */
+  .profile-avatar {
+    width: 80px !important;
+    height: 80px !important;
+    margin-bottom: 1rem !important;
+  }
+
+  /* Центрируем изображения */
+  .screenshot, .function-image, .member-photo {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* Секция решения */
@@ -1725,5 +1763,90 @@
 
   section h3 {
     font-size: 1.5rem;
+  }
+}
+
+/* Дополнительные исправления для мобильной версии */
+@media (max-width: 768px) {
+  /* Принудительно ограничиваем ширину всех элементов */
+  * {
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Фиксируем проблему с problem-cards */
+  .problem-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 0;
+  }
+
+  .problem-card {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* Исправляем карусель в секции технологий */
+  .functions-carousel-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .functions-carousel {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .function-slide {
+    width: 100%;
+    min-width: 100%;
+    padding: 1rem;
+  }
+
+  /* Исправляем таблицу сравнения конкурентов */
+  .competitors-table-container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .competitors-table {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Сжимаем таблицу для лучшего отображения */
+  .table-header, .table-row {
+    padding: 0;
+  }
+
+  .feature-name, .competitor, .our-app {
+    padding: 0.5rem 0.2rem;
+    font-size: 0.8rem;
+  }
+
+  /* Исправляем секцию market-metrics */
+  .market-metrics {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .market-metric {
+    width: 100%;
+  }
+
+  /* Исправляем решение и ценностное предложение */
+  .value-propositions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .value-card {
+    width: 100%;
   }
 }
