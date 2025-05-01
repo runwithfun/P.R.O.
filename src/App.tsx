@@ -955,7 +955,7 @@ window.addEventListener('DOMContentLoaded', () => {
   updateArrowsVisibility();
 
   // Удаляем подсказку после первого взаимодействия с каруселью
-  const carouselHint = document.querySelector('.carousel-hint');
+  const carouselHint = document.querySelector('.carousel-hint') as HTMLElement;
   if (carouselHint) {
     const hideHint = () => {
       carouselHint.style.opacity = '0';
