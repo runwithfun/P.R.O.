@@ -1653,3 +1653,77 @@
     font-size: 1.5rem;
   }
 }
+
+/* Скрытие навигации на мобильных устройствах */
+@media (max-width: 768px) {
+  .nav, .mobile-menu-toggle {
+    display: none !important; /* полностью скрываем навигацию и кнопку меню */
+  }
+
+  /* Центрируем логотип в шапке */
+  .header-container {
+    justify-content: center;
+  }
+
+  /* Скрываем кнопку CTA в шапке */
+  .header .cta-button {
+    display: none;
+  }
+
+  /* Увеличиваем логотип */
+  .logo {
+    align-items: center;
+  }
+
+  .logo h1 {
+    font-size: 2.5rem;
+  }
+
+  /* Скрываем галерею приложения в секции решения */
+  .app-gallery {
+    display: none;
+  }
+
+  /* Сброс паддингов для корневого контейнера */
+  #root {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  /* Убираем горизонтальную прокрутку */
+  body, html {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Адаптация контейнеров */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: calc(100% - 2rem);
+  }
+
+  /* Уменьшаем отступы в секциях */
+  .section {
+    padding: 2rem 0;
+  }
+
+  /* Адаптируем элементы hero-секции */
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Уменьшаем размер заголовков в секциях */
+  section h2 {
+    font-size: 2rem;
+  }
+
+  section h3 {
+    font-size: 1.5rem;
+  }
+}
