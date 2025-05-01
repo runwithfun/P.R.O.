@@ -364,3 +364,1292 @@
     justify-content: center;
   }
 }
+
+/* Секция решения */
+.solution-section {
+  background-color: var(--color-white);
+  padding: 5rem 0;
+}
+
+.solution-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-dark);
+}
+
+.solution-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.solution-intro p {
+  font-size: 1.2rem;
+  color: var(--color-gray);
+}
+
+.solution-section h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: var(--color-fuchsia);
+}
+
+.value-propositions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.value-card {
+  background-color: var(--color-white);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid var(--color-citric);
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.value-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.value-card h4 {
+  color: var(--color-dark);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.value-card p {
+  color: var(--color-gray);
+}
+
+.app-gallery {
+  margin-top: 4rem;
+}
+
+.gallery-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.screenshots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.screenshot {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.screenshot:hover {
+  transform: scale(1.05);
+}
+
+.screenshot img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.screenshot p {
+  margin-top: 1rem;
+  color: var(--color-dark);
+  font-weight: 500;
+}
+
+/* Стили для указателей прокрутки карусели */
+.carousel-hint {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--color-gray);
+  font-style: italic;
+  transition: opacity 0.5s ease;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-fuchsia);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-arrow:hover {
+  opacity: 1;
+}
+
+.carousel-arrow-left {
+  left: -10px;
+}
+
+.carousel-arrow-right {
+  right: -10px;
+}
+
+/* Добавляем градиент для показа, что содержимое можно прокручивать */
+.functions-carousel-container {
+  position: relative;
+}
+
+.functions-carousel-container::before,
+.functions-carousel-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.functions-carousel-container::before {
+  left: 0;
+  background: linear-gradient(to right, var(--color-light-gray), transparent);
+}
+
+.functions-carousel-container::after {
+  right: 0;
+  background: linear-gradient(to left, var(--color-light-gray), transparent);
+}
+
+/* Адаптивность для индикаторов */
+@media (max-width: 768px) {
+  .carousel-arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+  }
+
+  .carousel-arrow-left {
+    left: -5px;
+  }
+
+  .carousel-arrow-right {
+    right: -5px;
+  }
+}
+
+/* Секция технологии */
+.technology-section {
+  background-color: var(--color-light-gray);
+  padding: 5rem 0;
+}
+
+.technology-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-dark);
+}
+
+.tech-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.tech-intro h3 {
+  font-size: 1.8rem;
+  color: var(--color-fuchsia);
+}
+
+.tech-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.tech-feature {
+  background-color: var(--color-white);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.tech-feature:hover {
+  transform: translateY(-10px);
+}
+
+.tech-feature .icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-fuchsia);
+}
+
+.tech-feature h4 {
+  color: var(--color-dark);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.tech-feature p {
+  color: var(--color-gray);
+}
+
+.main-functions {
+  margin-top: 4rem;
+}
+
+.main-functions h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+  color: var(--color-fuchsia);
+}
+
+.function-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+  gap: 3rem;
+}
+
+.function-group.reverse {
+  flex-direction: row-reverse;
+}
+
+.function-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.function-image img {
+  max-width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.function-image img:hover {
+  transform: scale(1.05);
+}
+
+.function-description {
+  flex: 2;
+}
+
+.function-description h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-dark);
+}
+
+.function-description ul {
+  padding-left: 1.5rem;
+}
+
+.function-description li {
+  margin-bottom: 0.5rem;
+  color: var(--color-gray);
+}
+
+/* Дополнительные стили для адаптивности */
+@media (max-width: 768px) {
+  .function-group,
+  .function-group.reverse {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .function-description,
+  .function-image {
+    text-align: center;
+  }
+
+  .function-description ul {
+    text-align: left;
+  }
+}
+
+/* Карусель функций */
+.functions-carousel-container {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.functions-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  gap: 2rem;
+  padding: 1rem 0;
+  width: 100%;
+  scroll-snap-type: x mandatory;
+}
+
+.functions-carousel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari и Opera */
+}
+
+.function-slide {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-shrink: 0;
+  scroll-snap-align: start; /* Для привязки к началу при скролле */
+}
+
+/* Обновленные стили для функций */
+.function-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.function-image img {
+  max-width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.function-description {
+  flex: 2;
+}
+
+/* Адаптивные стили для карусели */
+@media (max-width: 768px) {
+  .function-slide {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .function-description ul {
+    text-align: left;
+  }
+
+  .nav-button {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+
+  .functions-nav-left {
+    left: -10px;
+  }
+
+  .functions-nav-right {
+    right: -10px;
+  }
+}
+
+.semi-transparent {
+  opacity: 0.3;
+}
+
+/* Секция рынка */
+.market-section {
+  background-color: var(--color-white);
+  padding: 5rem 0;
+}
+
+.market-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--color-dark);
+}
+
+.market-section h3 {
+  font-size: 1.8rem;
+  color: var(--color-fuchsia);
+  margin-bottom: 1.5rem;
+}
+
+.market-geography,
+.market-volume,
+.business-model {
+  margin-bottom: 4rem;
+}
+
+.market-geography p,
+.market-source p {
+  font-size: 1.1rem;
+  color: var(--color-gray);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.market-metrics {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.market-metric {
+  flex: 1;
+  background-color: var(--color-white);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+  border-top: 4px solid var(--color-citric);
+}
+
+.market-metric:hover {
+  transform: translateY(-10px);
+}
+
+.metric-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--color-fuchsia);
+  margin-bottom: 0.5rem;
+}
+
+.metric-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-dark);
+  margin-bottom: 1rem;
+}
+
+.metric-description {
+  color: var(--color-gray);
+}
+
+.model-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.model-item {
+  display: flex;
+  align-items: flex-start;
+  background-color: var(--color-white);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.model-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.model-icon {
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: var(--color-fuchsia);
+}
+
+.model-content h4 {
+  color: var(--color-dark);
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.model-content p {
+  color: var(--color-gray);
+}
+
+/* Адаптивность для секции рынка */
+@media (max-width: 768px) {
+  .market-metrics {
+    flex-direction: column;
+  }
+
+  .market-metric {
+    width: 100%;
+  }
+}
+
+/* Секция конкурентов */
+.competitors-section {
+  background-color: var(--color-light-gray);
+  padding: 5rem 0;
+}
+
+.competitors-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--color-dark);
+}
+
+.competitors-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.competitors-intro p {
+  font-size: 1.1rem;
+  color: var(--color-gray);
+}
+
+.competitors-table-container {
+  margin-bottom: 4rem;
+  overflow-x: auto;
+}
+
+.competitors-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.table-header {
+  display: flex;
+  background-color: var(--color-dark);
+  color: white;
+  font-weight: bold;
+}
+
+.table-row {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  background-color: white;
+}
+
+.table-row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.feature-name {
+  flex: 2;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.competitor, .our-app {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.our-app {
+  background-color: var(--color-citric);
+  font-weight: bold;
+}
+
+.table-header .our-app {
+  background-color: var(--color-fuchsia);
+  color: white;
+}
+
+.table-note {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-gray);
+  font-style: italic;
+}
+
+.unique-advantages h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: var(--color-fuchsia);
+}
+
+.advantages-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.advantage-item {
+  display: flex;
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.advantage-item:hover {
+  transform: translateY(-10px);
+}
+
+.advantage-icon {
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: var(--color-fuchsia);
+}
+
+.advantage-content h4 {
+  color: var(--color-dark);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.advantage-content p {
+  color: var(--color-gray);
+}
+
+/* Адаптивность для сравнительной таблицы */
+@media (max-width: 768px) {
+  .competitors-table-container {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding: 0 1rem;
+  }
+
+  .feature-name {
+    min-width: 180px;
+  }
+
+  .competitor, .our-app {
+    min-width: 100px;
+  }
+}
+
+/* Секция юнит-экономики */
+.unit-economics-section {
+  background-color: var(--color-white);
+  padding: 5rem 0;
+}
+
+.unit-economics-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--color-dark);
+}
+
+.economics-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.economics-intro p {
+  font-size: 1.1rem;
+  color: var(--color-gray);
+}
+
+.key-metrics,
+.user-metrics,
+.profit-formula,
+.growth-strategy {
+  margin-bottom: 4rem;
+}
+
+.unit-economics-section h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: var(--color-fuchsia);
+}
+
+/* Стили для карточек ключевых метрик */
+.metrics-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.metric-card {
+  background-color: var(--color-white);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+  border-left: 4px solid var(--color-citric);
+}
+
+.metric-card:hover {
+  transform: translateY(-10px);
+}
+
+.metric-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--color-dark);
+  margin-bottom: 0.5rem;
+}
+
+.metric-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--color-fuchsia);
+  margin-bottom: 0.5rem;
+}
+
+.metric-description {
+  color: var(--color-gray);
+  font-size: 1rem;
+}
+
+/* Стили для метрик пользователей */
+.metrics-container {
+  display: flex;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.user-metrics-chart {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-color: var(--color-white);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+}
+
+.chart-bar {
+  width: 60px;
+  height: 200px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.bar-segment {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.users-total {
+  background-color: var(--color-gray);
+}
+
+.users-active {
+  background-color: var(--color-citric);
+  color: var(--color-dark);
+}
+
+.users-paying {
+  background-color: var(--color-fuchsia);
+}
+
+.chart-label {
+  text-align: center;
+  color: var(--color-dark);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.conversion-metrics {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--color-white);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.conversion-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.conversion-label {
+  flex: 1;
+  color: var(--color-dark);
+  font-weight: 500;
+}
+
+.conversion-bar {
+  flex: 2;
+  height: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 1rem;
+}
+
+.conversion-progress {
+  height: 100%;
+  background-color: var(--color-fuchsia);
+  border-radius: 10px;
+}
+
+.conversion-value {
+  width: 50px;
+  color: var(--color-fuchsia);
+  font-weight: bold;
+  text-align: right;
+}
+
+/* Стили для формулы прибыли */
+.formula-container {
+  background-color: var(--color-white);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.formula {
+  font-size: 1.2rem;
+  color: var(--color-dark);
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+}
+
+.formula-text {
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.formula-result {
+  display: flex;
+  justify-content: center;
+}
+
+.result-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result-label {
+  color: var(--color-gray);
+  margin-bottom: 0.5rem;
+}
+
+.result-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--color-fuchsia);
+}
+
+/* Стили для стратегии развития */
+.strategy-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.strategy-item {
+  display: flex;
+  align-items: flex-start;
+  background-color: var(--color-white);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.strategy-item:hover {
+  transform: translateY(-10px);
+}
+
+.strategy-icon {
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: var(--color-fuchsia);
+}
+
+.strategy-content h4 {
+  color: var(--color-dark);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.strategy-content ul {
+  padding-left: 1.5rem;
+  color: var(--color-gray);
+}
+
+.strategy-content li {
+  margin-bottom: 0.5rem;
+}
+
+/* Адаптивность для секции юнит-экономики */
+@media (max-width: 968px) {
+  .metrics-container {
+    flex-direction: column;
+  }
+
+  .user-metrics-chart,
+  .conversion-metrics {
+    width: 100%;
+  }
+
+  .formula {
+    font-size: 1rem;
+    padding: 1rem;
+    overflow-x: auto;
+  }
+
+  .result-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .result-value {
+    font-size: 1.5rem;
+  }
+}
+
+/* Секция команды */
+.team-section {
+  background-color: var(--color-light-gray);
+  padding: 5rem 0;
+}
+
+.team-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--color-dark);
+}
+
+.team-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.team-intro p {
+  font-size: 1.1rem;
+  color: var(--color-gray);
+}
+
+.team-members {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.team-member {
+  display: flex;
+  background-color: var(--color-white);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.member-photo {
+  flex: 1;
+  min-width: 250px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-info {
+  flex: 2;
+  padding: 2rem;
+}
+
+.member-info h3 {
+  font-size: 1.8rem;
+  color: var(--color-dark);
+  margin-bottom: 0.5rem;
+}
+
+.member-position {
+  color: var(--color-fuchsia);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.member-info p {
+  color: var(--color-gray);
+  margin-bottom: 1.5rem;
+}
+
+.member-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link {
+  padding: 0.5rem 1rem;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: var(--color-citric);
+}
+
+.team-advisors {
+  margin-top: 3rem;
+}
+
+.team-advisors h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--color-fuchsia);
+  margin-bottom: 2rem;
+}
+
+.advisors-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.advisor {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-white);
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.advisor:hover {
+  transform: translateY(-5px);
+}
+
+.advisor-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 1.5rem;
+}
+
+.advisor-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.advisor-info h4 {
+  font-size: 1.2rem;
+  color: var(--color-dark);
+  margin-bottom: 0.3rem;
+}
+
+.advisor-position {
+  color: var(--color-fuchsia);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.advisor-info p {
+  color: var(--color-gray);
+  font-size: 0.9rem;
+}
+
+/* CTA секция */
+.cta-section {
+  background-color: var(--color-white);
+  padding: 5rem 0;
+  background-image: linear-gradient(135deg, rgba(240, 55, 165, 0.1) 0%, rgba(230, 254, 95, 0.1) 100%);
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  color: var(--color-dark);
+  margin-bottom: 1.5rem;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  color: var(--color-gray);
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.secondary-btn {
+  border-radius: 8px;
+  border: 1px solid var(--color-fuchsia);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: transparent;
+  color: var(--color-fuchsia);
+  cursor: pointer;
+  transition: all 0.25s;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.secondary-btn:hover {
+  background-color: var(--color-fuchsia);
+  color: white;
+}
+
+.cta-benefits {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.benefit {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.benefit-icon {
+  font-size: 1.2rem;
+}
+
+.benefit-text {
+  color: var(--color-gray);
+  font-size: 0.9rem;
+}
+
+/* Адаптивность для новых секций */
+@media (max-width: 768px) {
+  .team-member {
+    flex-direction: column;
+  }
+
+  .member-photo {
+    min-height: 250px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .cta-benefits {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Мобильная навигация */
+.mobile-menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--color-dark);
+}
+
+@media (max-width: 992px) {
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 250px;
+    background-color: var(--color-white);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    padding: 2rem;
+  }
+
+  .nav.active {
+    right: 0;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .close-menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+}
