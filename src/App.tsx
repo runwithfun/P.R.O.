@@ -46,7 +46,18 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="hero-image">
-          <img src="https://raw.githubusercontent.com/runwithfun/introducing/main/images/login_screen.jpg" alt="P.R.O. Fitness Tracker" />
+          <video
+            width="100%"
+            height="auto"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="hero-video"
+          >
+            <source src="https://raw.githubusercontent.com/runwithfun/P.R.O./main/public/videoapp.MP4" type="video/mp4" />
+            Ваш браузер не поддерживает видео тег.
+          </video>
         </div>
       </div>
     </section>

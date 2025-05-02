@@ -180,6 +180,23 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
+/* Стили для видео в героической секции */
+.hero-video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
+/* Адаптивность для видео на мобильных устройствах */
+@media (max-width: 768px) {
+  .hero-video {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
 /* Секция проблем */
 .problem-section {
   background-color: var(--color-white);
