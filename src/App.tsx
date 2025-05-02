@@ -275,14 +275,14 @@ const TechnologySection = () => {
 
               <div className="function-slide">
                 <div className="function-image">
-                  <img src="https://raw.githubusercontent.com/runwithfun/introducing/main/images/heart_rate.jpg" alt="Анализ сердечного ритма" />
+                  <img src="https://raw.githubusercontent.com/runwithfun/introducing/main/images/heart_rate.jpg" alt="Анализ показателей" />
                 </div>
                 <div className="function-description">
-                  <h4>Анализ сердечного ритма</h4>
+                  <h4>Анализ показателей</h4>
                   <ul>
-                    <li>Графики изменения пульса во время тренировки</li>
-                    <li>Анализ по 5 зонам сердечного ритма</li>
-                    <li>Процентное соотношение времени в каждой зоне</li>
+                    <li>Детальный анализ всех ключевых метрик тренировок</li>
+                    <li>Отслеживание прогресса по различным параметрам</li>
+                    <li>Персонализированные рекомендации на основе данных</li>
                   </ul>
                 </div>
               </div>
@@ -303,7 +303,7 @@ const TechnologySection = () => {
 
               <div className="function-slide">
                 <div className="function-image">
-                  <img src="https://raw.githubusercontent.com/runwithfun/introducing/main/images/workout_history.jpg" alt="История тренировок" />
+                  <img src="https://raw.githubusercontent.com/runwithfun/P.R.O./main/public/all_workouts.jpg" alt="История тренировок" />
                 </div>
                 <div className="function-description">
                   <h4>История и статистика</h4>
@@ -313,6 +313,43 @@ const TechnologySection = () => {
                     <li>Годовые отчеты с графиками по месяцам</li>
                     <li>Комплексный анализ по всем видам активности</li>
                   </ul>
+                </div>
+              </div>
+
+              {/* Дополнительные слайды без описания */}
+              <div className="function-slide">
+                <div className="function-image">
+                  <img src="https://raw.githubusercontent.com/runwithfun/P.R.O./main/public/workout.jpeg" alt="Тренировка" />
+                </div>
+              </div>
+
+              <div className="function-slide">
+                <div className="function-image">
+                  <img src="https://raw.githubusercontent.com/runwithfun/P.R.O./main/public/workout2.jpeg" alt="Детали тренировки" />
+                </div>
+              </div>
+
+              <div className="function-slide">
+                <div className="function-image">
+                  <img src="https://raw.githubusercontent.com/runwithfun/P.R.O./main/public/training_calendar.jpeg" alt="Календарь тренировок" />
+                </div>
+              </div>
+
+              <div className="function-slide">
+                <div className="function-image">
+                  <img src="https://raw.githubusercontent.com/runwithfun/P.R.O./main/public/statistic.jpeg" alt="Статистика" />
+                </div>
+              </div>
+
+              <div className="function-slide">
+                <div className="function-image">
+                  <img src="https://raw.githubusercontent.com/runwithfun/P.R.O./main/public/statistic2.jpeg" alt="Расширенная статистика" />
+                </div>
+              </div>
+
+              <div className="function-slide">
+                <div className="function-image">
+                  <img src="https://raw.githubusercontent.com/runwithfun/P.R.O./main/public/speed.jpeg" alt="Анализ скорости" />
                 </div>
               </div>
             </div>
