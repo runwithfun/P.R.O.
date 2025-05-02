@@ -4,7 +4,7 @@
 <div align="center">
   <h1>P.R.O.</h1>
   <h2>Personal Result Optimizer</h2>
-  <img src="https://raw.githubusercontent.com/runwithfun/introducing/main/images/login_screen.jpg" width="300" alt="P.R.O. Fitness Tracker">
+  <img src="https://github.com/runwithfun/P.R.O./blob/main/public/videoapp.MP4" width="300" alt="P.R.O. Fitness Tracker">
   <p><em>Превращаем каждый ваш шаг в достижение</em></p>
   <h3>📱 <a href="https://runwithfun.github.io/P.R.O/">Открыть веб-версию</a> 🏃‍♂️</h3>
   <hr>
