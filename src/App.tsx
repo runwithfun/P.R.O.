@@ -437,6 +437,142 @@ const MarketSection = () => {
   )
 }
 
+const MediaSection = () => {
+  return (
+    <section className="media-section section" id="media">
+      <div className="container">
+        <h2>📱 Медиа и пиар</h2>
+
+        <div className="media-intro">
+          <p>Наша медиа-стратегия направлена на создание глобального сообщества любителей фитнеса, где P.R.O. станет центром обмена опытом и знаниями.</p>
+        </div>
+
+        <div className="media-stats-banner">
+          <div className="stat-item">
+            <div className="stat-value">67%</div>
+            <div className="stat-label">пользователей находят фитнес-приложения через соцсети</div>
+          </div>
+          <div className="stat-item">
+            <div className="stat-value">4.2×</div>
+            <div className="stat-label">выше удержание у пользователей, вовлеченных в сообщество</div>
+          </div>
+          <div className="stat-item">
+            <div className="stat-value">300%</div>
+            <div className="stat-label">рост органических установок через контент-маркетинг</div>
+          </div>
+        </div>
+
+        <div className="media-content">
+          {/* Контент-план */}
+          <div className="content-plan">
+            <h3>Глобальный контент-план</h3>
+
+            <div className="content-themes">
+              <div className="theme">
+                <div className="theme-icon">💪</div>
+                <div className="theme-content">
+                  <h4>Обучающий контент</h4>
+                  <p>Образовательные материалы по фитнесу, правильному питанию и отслеживанию прогресса</p>
+                </div>
+              </div>
+              <div className="theme">
+                <div className="theme-icon">🔬</div>
+                <div className="theme-content">
+                  <h4>Научный подход</h4>
+                  <p>Исследования, статистика и научный подход к тренировкам и анализу данных</p>
+                </div>
+              </div>
+              <div className="theme">
+                <div className="theme-icon">📈</div>
+                <div className="theme-content">
+                  <h4>Истории успеха</h4>
+                  <p>Реальные результаты пользователей и их путь к достижению целей</p>
+                </div>
+              </div>
+              <div className="theme">
+                <div className="theme-icon">🧠</div>
+                <div className="theme-content">
+                  <h4>Разработка и инновации</h4>
+                  <p>Материалы о процессе создания приложения, технологических решениях и новых функциях</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="languages-map">
+              <h4>Мультиязычный контент</h4>
+
+              <div className="ai-translation-info">
+                <div className="ai-icon">🌐🤖</div>
+                <div className="ai-content">
+                  <p>Современные технологии искусственного интеллекта позволяют нам создавать высококачественный контент на языках всего мира без потери смысла и культурного контекста</p>
+                </div>
+              </div>
+
+              <div className="language-benefits">
+                <div className="benefit-card">
+                  <div className="benefit-icon">🚀</div>
+                  <div className="benefit-title">Глобальный охват</div>
+                  <p>Доступ к многомиллионной аудитории по всему миру</p>
+                </div>
+                <div className="benefit-card">
+                  <div className="benefit-icon">⚡</div>
+                  <div className="benefit-title">Скорость</div>
+                  <p>Перевод и адаптация контента в течение минут</p>
+                </div>
+                <div className="benefit-card">
+                  <div className="benefit-icon">💡</div>
+                  <div className="benefit-title">Локализация</div>
+                  <p>Адаптация под культурные особенности каждой страны</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Геймификация и вирусный потенциал */}
+          <div className="content-plan">
+            <h3>Вирусный потенциал и геймификация</h3>
+
+            <div className="content-themes">
+              <div className="theme">
+                <div className="theme-icon">🏆</div>
+                <div className="theme-content">
+                  <h4>Соревнования и челленджи</h4>
+                  <p>Регулярные соревнования по различным активностям с реальными призами и возможностью делиться результатами</p>
+                </div>
+              </div>
+              <div className="theme">
+                <div className="theme-icon">🎁</div>
+                <div className="theme-content">
+                  <h4>Реферальная программа</h4>
+                  <p>Получение дополнительных функций и бонусов за приглашение друзей, с трекингом прогресса приглашенных</p>
+                </div>
+              </div>
+              <div className="theme">
+                <div className="theme-icon">🔄</div>
+                <div className="theme-content">
+                  <h4>Шеринг достижений</h4>
+                  <p>Интеграция с социальными сетями для мгновенного шеринга результатов тренировок с брендированием P.R.O.</p>
+                </div>
+              </div>
+              <div className="theme">
+                <div className="theme-icon">📊</div>
+                <div className="theme-content">
+                  <h4>Ключевые показатели</h4>
+                  <ul className="metrics-list">
+                    <li><span className="metric-key">K-фактор:</span> <span className="metric-value-inline">1.3</span> <span className="metric-description-inline">коэффициент вирусного роста</span></li>
+                    <li><span className="metric-key">Органический рост:</span> <span className="metric-value-inline">40%</span> <span className="metric-description-inline">доля органических установок</span></li>
+                    <li><span className="metric-key">Конверсия реферралов:</span> <span className="metric-value-inline">12%</span> <span className="metric-description-inline">установки через реферальные ссылки</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
 const UnitEconomicsSection = () => {
   return (
     <section className="unit-economics-section section" id="unit-economics">
@@ -806,6 +942,7 @@ function App() {
         <SolutionSection />
         <TechnologySection />
         <MarketSection />
+        <MediaSection />
         <UnitEconomicsSection />
         <CompetitorsSection />
         <TeamSection />
